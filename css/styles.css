@@ -612,3 +612,29 @@ address {
 	align-items: center;
 	cursor: pointer;
 }
+.e-mail {
+	margin-left: 93px;
+}
+textarea {
+	resize: none;
+}
+.form {
+	width: 448px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.form-field {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+}
+.form-field input {
+	padding: 11px 12px;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+}
+.form-field textarea {
+	padding: 12px 16px;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+}
