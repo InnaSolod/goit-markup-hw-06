@@ -322,9 +322,9 @@
 				</div>
 				<div class="e-mail">
 					<p class="text-footer-social">Подпишитесь на рассылку</p>
-					<form action="">
+					<form class="e-mail-form">
 						<input type="email" name="mail" id="mail" placeholder="E-mail"/>
-						<button type="submit">Подписаться</button>
+						<button class="e-mail-button" type="submit">Подписаться</button>
 					</form>
 				</div>
 			</div>
@@ -334,7 +334,7 @@
 		<div class="backdrop is-hidden" data-modal>
 			<div class="modal">
 				<button data-modal-close class="modal-close"><svg width="10px" height="10px"><use href="./images/symbol-defs.svg#close"></use></svg></button>
-				<h2>Оставьте свои данные, мы вам перезвоним</h2>
+				<h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
 				<form class="form">
 					<div class="form-field">
 						<label for="name">Имя</label>
@@ -352,9 +352,15 @@
 						<label for="comment">Комментарий</label>
 						<textarea name="comment" id="comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
 					</div>
-					<input type="checkbox" name="checkbox" id="checkbox" />
-					<label for="checkbox">Соглашаюсь с рассылкой и принимаю Условия договора</label>
-					<button type="submit">Отправить</button>
+					<div class="form-checkbox">
+						<input type="checkbox" name="checkbox" id="checkbox" />
+						<label for="checkbox">Соглашаюсь с рассылкой и принимаю <a class="checkbox-link" href="">Условия договора</a></label>
+					</div>
+					<div class="modal-button">	
+						<button class="form-button" type="submit">Отправить</button>
+						
+						
+					</div>
 				</form>
 
 			</div>
