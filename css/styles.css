@@ -674,13 +674,30 @@ textarea {
 .form-field {
 	display: flex;
 	flex-direction: column;
-	
 }
-.form-field input {
-	padding: 11px 12px;
+.form-input {
+	width: 100%;
+	padding: 11px 30px;
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
 	margin-bottom: 10px;
+	cursor: pointer;
+	
+}
+.modal-icon {
+	position: relative;
+}
+.modal-icon:focus-within > svg {
+	fill: var(--accent-color);
+}
+.form-input:focus {
+	outline: 1px solid var(--accent-color);
+}
+.modal-icon svg {
+	position: absolute;
+	top: 14px;
+	left: 15px;
+	display: inline-block;
 }
 .form-field label {
 	margin-bottom: 4px;
@@ -762,3 +779,4 @@ textarea {
 .e-mail-button:hover::before {
 	transform: translateY(-1px);
 }
+
