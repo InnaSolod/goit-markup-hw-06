@@ -611,6 +611,11 @@ address {
 	justify-content: center;
 	align-items: center;
 	cursor: pointer;
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-close:hover,
+.modal-close:focus {
+	fill: var(--accent-color);
 }
 .e-mail {
 	margin-left: 93px;
@@ -671,6 +676,7 @@ textarea {
 	letter-spacing: 0.01em;
 	color: rgba(117, 117, 117, 0.5);
 }
+
 .form-field {
 	display: flex;
 	flex-direction: column;
@@ -682,6 +688,7 @@ textarea {
 	border-radius: 4px;
 	margin-bottom: 10px;
 	cursor: pointer;
+	transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	
 }
 .modal-icon {
@@ -698,6 +705,7 @@ textarea {
 	top: 14px;
 	left: 15px;
 	display: inline-block;
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-field label {
 	margin-bottom: 4px;
@@ -705,12 +713,23 @@ textarea {
 	line-height: 1.16;
 	letter-spacing: 0.01em;
 }
-.form-field textarea {
+.checkbox-label {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-textarea {
 	padding: 12px 16px;
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
 	height: 120px;
 	margin-bottom: 20px;
+	cursor: pointer;
+	transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-textarea:focus {
+	outline: 1px solid var(--accent-color);
 }
 .checkbox-link {
 	text-decoration-line: underline;
@@ -721,7 +740,42 @@ textarea {
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 30px;
+	
 }
+
+.visually-hidden {
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	margin: -1px;
+  }
+
+.checkbox-svg {
+	display: inline-block;
+	margin-right: 8px;	
+}
+.checkbox-label:hover {
+	fill: var(--accent-color);
+}
+.checkbox-label:focus{
+	fill: var(--accent-color);
+}
+.checkbox:checked + .checkbox-svg {
+	background-image: url(../images/icon-check.svg);
+	width: 16px;
+	height: 15px;
+	background-color: var(--accent-color);
+	background-origin: border-box;
+	fill: var(--accent-color);
+	border-radius: 2px;
+}
+
 .modal-button {
 	display: flex;
 	justify-content: center;

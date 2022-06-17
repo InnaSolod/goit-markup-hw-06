@@ -359,11 +359,15 @@
 					</div>
 					<div class="form-field">
 						<label for="comment">Комментарий</label>
-						<textarea name="comment" id="comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
+						<textarea class="form-textarea" name="comment" id="comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
 					</div>
 					<div class="form-checkbox">
-						<input type="checkbox" name="checkbox" id="checkbox" />
-						<label for="checkbox">Соглашаюсь с рассылкой и принимаю <a class="checkbox-link" href="">Условия договора</a></label>
+						<label class="checkbox-label">
+							<input class="checkbox visually-hidden" type="checkbox" name="checkbox" id="checkbox" />
+							<svg class="checkbox-svg" width="16px" height="15px"><use href="./images/symbol-defs-1.svg#vector-3"></use></svg>
+							Соглашаюсь с рассылкой и принимаю <a class="checkbox-link" href="">Условия договора</a>
+						</label>
+						
 					</div>
 					<div class="modal-button">	
 						<button class="form-button" type="submit">Отправить</button>
