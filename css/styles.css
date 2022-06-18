@@ -584,7 +584,7 @@ address {
 	width: 528px;
 	height: 581px;
 	background-color: var(--text-white-color);
-	
+	padding: 40px;
 }
 .is-hidden {
 	opacity: 0;
@@ -661,20 +661,22 @@ textarea {
 	line-height: 1.15;
 	text-align: center;
 	color: var(--title-color);
-	margin: 40px 40px 12px 40px;
+	margin: 0;
+	margin-bottom: 12px;
 }
-.form {
-	width: 448px;
-	margin-left: auto;
-	margin-right: auto;
-}
-.form-field textarea::placeholder {
+
+.modal-textarea textarea::placeholder {
 	font-family: 'Roboto';
 	font-weight: 400;
 	font-size: 12px;
 	line-height: 1.16;
 	letter-spacing: 0.01em;
 	color: rgba(117, 117, 117, 0.5);
+}
+.modal-textarea {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
 }
 
 .form-field {
@@ -686,13 +688,13 @@ textarea {
 	padding: 11px 30px;
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
-	margin-bottom: 10px;
 	cursor: pointer;
 	transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	
 }
 .modal-icon {
 	position: relative;
+	margin-bottom: 10px;
 }
 .modal-icon:focus-within > svg {
 	fill: var(--accent-color);
@@ -724,7 +726,6 @@ textarea {
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
 	height: 120px;
-	margin-bottom: 20px;
 	cursor: pointer;
 	transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -780,7 +781,6 @@ textarea {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 40px;
 }
 .form-button {
 	display: flex;
