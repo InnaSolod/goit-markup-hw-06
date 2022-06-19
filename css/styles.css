@@ -682,6 +682,7 @@ textarea {
 .form-field {
 	display: flex;
 	flex-direction: column;
+	margin-bottom: 10px;
 }
 .form-input {
 	width: 100%;
@@ -694,7 +695,7 @@ textarea {
 }
 .modal-icon {
 	position: relative;
-	margin-bottom: 10px;
+	
 }
 .modal-icon:focus-within > svg {
 	fill: var(--accent-color);
